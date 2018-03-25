@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import MapView from 'react-native-maps';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -24,15 +25,29 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+        <Text 
+          style={{
+            marginTop: 70,
+            paddingLeft:10,
+            fontWeight: 'bold',
+            width: '100%', 
+            height: 70, 
+            lineHeight:70,
+            border: '1px solid black'
+          }}
+        >CaMapp</Text>
+        <MapView
+            initialRegion={{
+              latitude: 37.78825,
+              longitude: -122.4324,
+              latitudeDelta: 0.0922,
+              longitudeDelta: 0.0421,
+            }}
+            style={{
+              width: '100%',
+              height: '100%'
+            }}
+          />
       </View>
     );
   }
