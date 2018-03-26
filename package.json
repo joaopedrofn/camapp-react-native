@@ -10,7 +10,11 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-native": "^0.54.2",
-    "react-native-maps": "https://github.com/react-community/react-native-maps.git"
+    "react-native-image-picker": "^0.26.7",
+    "react-native-maps": "https://github.com/react-community/react-native-maps.git",
+    "react-native-sensors": "https://github.com/react-native-sensors/react-native-sensors.git",
+    "react-native-vector-icons": "^4.5.0",
+    "react-navigation": "^1.5.8"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",
